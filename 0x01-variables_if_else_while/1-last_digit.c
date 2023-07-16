@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Starting point
- * Description: last digit
+ * main - Start point
+ * Description:' last digit'
  * return: always return 0
  */
 int main(void)
