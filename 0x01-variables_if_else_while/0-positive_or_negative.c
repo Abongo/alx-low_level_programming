@@ -4,7 +4,7 @@
 /**
  * main: - starting point
  * Description: checking if the number is +ve or  -Ve
- * Return: eturn zero if no
+ * Return r eturn zero if no
  */
 int main(void)
 {
@@ -23,3 +23,4 @@ int main(void)
 		printf("%d is negative\n", n);
 	}
 	return (0);
+}
