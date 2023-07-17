@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * main: - starting point
- * Description: checking if the number is +ve or  -Ve
- * Return r eturn zero if no
+ * Description: Prints if number is positive,zero or negative
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,9 +12,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if (n > 0)
-		printf("%d is Positive\n", n);
+	{	printf("%d is Positive\n", n);
+	}
 	else if (n == 0)
 	{
 		printf("%d is Zero\n", n);
