@@ -4,7 +4,7 @@
  * @c: character check
  * Return: 1 for aphabetic character or 0 for any
  */
-int _isaplha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
