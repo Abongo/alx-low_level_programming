@@ -35,30 +35,30 @@ int op_sub(int k, int b)
  *
  * Return: The product of k and b.
  */
-int op_mul(int k, int b)
+int op_mul(int a, int b)
 {
-	return (k * b);
+	return (a * b);
 }
 /**
  * op_div - Returns the division of two numbers.
- * @k: The first number.
+ * @a: The first number.
  * @b: The second number.
  *
  * Return: The quotient of k and b.
  */
-int op_div(int k, int b)
+int op_div(int a, int b)
 {
-	return (k / b);
+	return (a / b);
 }
 /**
  * op_mod - Returns the remainder of the division of two numbers.
- * @k: The first number.
+ * @a: The first number.
  * @b: The second number.
  *
  * Return: The remainder of the division of k by b.
  */
-int op_mod(int k, int b)
+int op_mod(int a, int b)
 {
-	return (k % b);
+	return (a % b);
 }
 
