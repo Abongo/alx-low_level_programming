@@ -1,4 +1,6 @@
-include "3-calc.h"
+#include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 int op_add(int k, int b);
 int op_sub(int k, int b);
