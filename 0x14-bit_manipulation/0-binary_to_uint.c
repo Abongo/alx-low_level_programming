@@ -5,17 +5,23 @@
  * Return: the converted number
  */
 unsigned int binary_to_uint(const char *b)
-{	int k;
-	unsigned int ruk = 0;
+{
+	int a;
+	unsigned int tom;
+
+	tom = 0;
 	if (!b)
 		return (0);
-
-	for (k = 0; b[k]; k++)
+	for (a = 0; b[a] != '\0'; a++)
 	{
-		if (b[k] < '0' || b[k] > '1')
+		if (b[a] != '0' && b[a] != '1')
 			return (0);
-		ruk = 2 * ruk + (b[k] - '0');
 	}
-
-	return (ruk);
+	for (a = 0; b[a] != '\0'; a++)
+	{
+		tom <<= 1;
+		if (b[a] == '1')
+			tom += 1;
+	}
+	return (tom);
 }

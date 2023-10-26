@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int today;
 	unsigned long int tomorrow = n ^ m;
 
-	for (j = 63; j >= 0; i--)
+	for (j = 63; j >= 0; j--)
 	{
 		today = tomorrow >> j;
 		if (today & 1)
