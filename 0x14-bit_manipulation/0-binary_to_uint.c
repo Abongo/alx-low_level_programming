@@ -6,22 +6,22 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int a;
-	unsigned int tom;
+	int k;
+	unsigned int num;
 
-	tom = 0;
+	num = 0;
 	if (!b)
 		return (0);
-	for (a = 0; b[a] != '\0'; a++)
+	for (k = 0; b[k] != '\0'; k++)
 	{
-		if (b[a] != '0' && b[a] != '1')
+		if (b[k] != '0' && b[k] != '1')
 			return (0);
 	}
-	for (a = 0; b[a] != '\0'; a++)
+	for (k = 0; b[k] != '\0'; k++)
 	{
-		tom <<= 1;
-		if (b[a] == '1')
-			tom += 1;
+		num <<= 1;
+		if (b[k] == '1')
+			num += 1;
 	}
-	return (tom);
+	return (num);
 }
