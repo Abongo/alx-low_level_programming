@@ -1,21 +1,24 @@
 #!/usr/bin/python3
 
+"""File representing an island"""
+
 
 def island_perimeter(grid):
     """
+    Returns the perimeter of an island.
     Method island_perimeter:
     that returns the perimeter of the island described in grid
     """
-    perim = 0
+    perimeter = 0
     for row in range(len(grid)):
-    for colum in range(len(grid[row])):
-        if grid[row][colum] == 1:
-        if row == 0 or grid[row - 1][colum] == 0:
-            perim += 1
-            if colum == 0 or grid[row][colum - 1] == 0:
-                perim += 1
-                if row == len(grid) - 1 or grid[row + 1][colum] == 0:
-                    perim += 1
-                    if colum == len(grid[row]) - 1 or grid[row][colum + 1] == 0:
-                        perim += 1
-                        return perim
+        for col in range(len(grid[row])):
+            if grid[row][col] == 1:
+                if row == 0 or grid[row - 1][col] == 0:
+                    perimeter += 1
+                if row == len(grid) - 1 or grid[row + 1][col] == 0:
+                    perimeter += 1
+                if col == 0 or grid[row][col - 1] == 0:
+                    perimeter += 1
+                if col == len(grid[row]) - 1 or grid[row][col + 1] == 0:
+                    perimeter += 1
+    return (perimeter)
